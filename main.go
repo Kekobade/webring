@@ -88,7 +88,7 @@ func buildCards(entries []WebringEntry) string {
 		b.WriteString(name)
 		b.WriteString(`</span><span class="host">`)
 		b.WriteString(html.EscapeString(host(e.Url)))
-		b.WriteString(`</span></span><span class="arrow">&rarr;</span></a>`)
+		b.WriteString(`</span></span><span class="arrow">&#8599;</span></a>`)
 		if e.Gh != "" {
 			gh := html.EscapeString(e.Gh)
 			b.WriteString(`<a class="gh-link" href="https://github.com/`)
